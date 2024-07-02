@@ -9,7 +9,7 @@ Text summarization is a vital task in natural language processing, simplifying l
 ## Key Steps
 
 ### 1. Data Preparation:
-   - We begin by importing necessary libraries and loading the CNN/DailyMail dataset, a widely-used benchmark for text summarization tasks.
+   - We begin by importing necessary libraries and loading the Samsum dataset, a widely-used benchmark for text summarization tasks.
 
 ### 2. Preprocessing:
    - Next, we preprocess the dataset by tokenizing the input articles and summaries, preparing them for input into the T5 model.
@@ -26,13 +26,10 @@ Text summarization is a vital task in natural language processing, simplifying l
 ### 6. Evaluation:
    - Evaluating the quality of generated summaries is crucial. We employ the ROUGE metric, a standard measure in text summarization, to assess the performance of our model.
 
-### 7. Fine-Tuning (Optional):
+### 7. Fine-Tuning:
    - For further refinement, we provide an option for fine-tuning the model using the Trainer class, allowing customization to specific tasks or datasets.
 
-### 8. Data Augmentation:
-   - Augmenting the dataset enhances model robustness. We explore synonym replacement as a technique to expand training data and improve model performance.
-
-### 9. Re-evaluation:
+### 8. Re-evaluation:
    - Post-augmentation, we re-evaluate the model using the ROUGE metric to gauge its enhanced performance.
 
 ## Results
