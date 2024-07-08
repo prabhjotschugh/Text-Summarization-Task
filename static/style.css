@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background color */
+    background-image: url(black.jpg);
+    color: #ffffff; /* White text color */
+}
+
+header {
+    background-color: #1e1e1e; /* Dark header background */
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: #1e1e1e; /* Dark navbar background */
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 60px;
+    width: auto;
+}
+
+.main-heading {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cta a {
+    background-color: #1199d3; /* Blue CTA button */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+.cta a:hover {
+    background-color: #045071; /* Darker blue on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    margin: 40px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Adjusted gap between cards */
+    margin-top: 20px; /* Increased margin top */
+}
+
+.card {
+    background-color: #1e1e1e; /* Dark card background */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Calculated width for two cards with gap */
+    flex: 1; 
+    height: 300px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card textarea,
+.card button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 1em;
+    background-color: #2c2c2c; /* Dark input background */
+    color: #ffffff;
+}
+
+.card button {
+    background-color: #1199d3; /* Blue button */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+
+.card button:hover {
+    background-color: #045071; /* Darker blue on hover */
+}
+
+#summary {
+    background-color: #2c2c2c; /* Dark summary background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 175px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 0.8em;
+    background-color: #2c2c2c; /* Dark input background */
+    color: #ffffff;
+    font-weight: normal;
+    font-family: Arial, sans-serif; 
+}
+
+footer {
+    background-color: #1e1e1e; /* Dark footer background */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-white {
+    color: #ffffff; /* White text color */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0da1ce; /* Orange on hover */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Text Summarization Logo">
+            </a>
+            <h1 class="main-heading">Text Summarization</h1>
+            <div class="cta">
+                <a href="#">About</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="card">
+                <h2>Input Text</h2>
+                <form id="summarizeForm">
+                    <textarea id="text" rows="11" placeholder="Enter your text here"></textarea>
+                    <button type="submit">Summarize</button>
+                </form>
+            </div>
+            <div class="card">
+                <h2>Summary</h2>
+                <p id="summary"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-white">Designed with <span style="color: red;">&#10084;</span> by <b><a href="https://www.linkedin.com/in/prabhjot-singh-chugh/" target="_blank">Prabhjot Singh</a></b></p>
+    </footer>
+    <script>
+        document.getElementById('summarizeForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const text = document.getElementById('text').value;
+            const response = await fetch('/summarize', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text })
+            });
+            const data = await response.json();
+            document.getElementById('summary').textContent = data.summary;
+        });
+    </script>
+</body>
+</html>
