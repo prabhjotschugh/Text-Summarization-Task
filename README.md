@@ -2,7 +2,7 @@
 
 In Text Summarization project powered by the T5 model, we explore the fascinating world of natural language processing to condense lengthy texts into concise summaries. Here's a sneak peek into what this project entails:
 
-Live Link - https://prabhjotschugh-text-summarization.onrender.com/
+Live Link - https://prabhjotschugh-text-summarization.onrender.com/ 
 
 ## Overview
 
